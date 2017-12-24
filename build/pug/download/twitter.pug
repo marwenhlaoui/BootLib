@@ -1,0 +1,15 @@
+extends ../layout/layout-download.pug
+
+block title
+	| BootLib : twitter - download 
+block nav-bar
+	include ../layout/includes/navbar/twitter.pug
+
+block css-link-input
+	input#css_link.form-control(type='text', value='http://cdn.dev2vision.com/bootlib/4/twitter.min.css')
+
+block css-link-html
+	| <link href="http://cdn.dev2vision.com/bootlib/4/twitter.min.css" rel="stylesheet">	
+
+block css-link-pug
+	| link(href="http://cdn.dev2vision.com/bootlib/4/twitter.min.css", rel="stylesheet")

@@ -1,0 +1,197 @@
+.col-md-12
+	h2.doc-title Navs
+	hr
+	.row
+		.col-md-12
+			h3.doc-title Breadcrumbs
+			hr
+			.row
+				.col-md-12
+					.code-zone
+						span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+						.code-data(cs-lang="html",code-title="Navs - Breadcrumbs")
+							ol.breadcrumb
+								li.breadcrumb-item.active Home
+							ol.breadcrumb
+								li.breadcrumb-item
+									a(href='#') Home
+								li.breadcrumb-item.active Library
+							ol.breadcrumb
+								li.breadcrumb-item
+									a(href='#') Home
+								li.breadcrumb-item
+									a(href='#') Library
+								li.breadcrumb-item.active Data
+			h3.doc-title Pagination
+			hr
+			.row
+				.col-md-3
+					.code-zone
+						span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+						.code-data(cs-lang="html",code-title="Navs - Pagination - Default")
+							nav(aria-label='Page navigation example')
+								ul.pagination
+									li.page-item.disabled
+										a.page-link(href='#') Previous
+									li.page-item
+										a.page-link(href='#') 1
+									li.page-item
+										a.page-link(href='#') 2
+									li.page-item.active
+										a.page-link(href='#') 3
+									li.page-item
+										a.page-link(href='#') Next
+					.code-zone
+						span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+						.code-data(cs-lang="html",code-title="Navs - Pagination - with icons")
+							nav(aria-label='Page navigation example')
+								ul.pagination
+									li.page-item.disabled
+										a.page-link(href='#', aria-label='Previous')
+											span(aria-hidden='true') «
+											span.sr-only Previous
+									li.page-item.active
+										a.page-link(href='#') 1
+									li.page-item
+										a.page-link(href='#') 2
+									li.page-item
+										a.page-link(href='#') 3
+									li.page-item
+										a.page-link(href='#', aria-label='Next')
+											span(aria-hidden='true') »
+											span.sr-only Next
+				.col-md-5
+					.code-zone
+						span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+						.code-data(cs-lang="html",code-title="Navs - Pagination - Size")
+							nav(aria-label='...')
+								ul.pagination.pagination-lg
+									li.page-item.disabled
+										a.page-link(href='#', tabindex='-1') Previous
+									li.page-item
+										a.page-link(href='#') 1
+									li.page-item
+										a.page-link(href='#') 2
+									li.page-item
+										a.page-link(href='#') 3
+									li.page-item
+										a.page-link(href='#') Next
+					.code-zone
+						span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+						.code-data(cs-lang="html",code-title="Navs - Pagination - Size")
+							nav(aria-label='...')
+								ul.pagination.pagination-sm
+									li.page-item.disabled
+										a.page-link(href='#', tabindex='-1') Previous
+									li.page-item
+										a.page-link(href='#') 1
+									li.page-item
+										a.page-link(href='#') 2
+									li.page-item
+										a.page-link(href='#') 3
+									li.page-item
+										a.page-link(href='#') Next
+				.col-md-4
+					.code-zone
+						span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+						.code-data(cs-lang="html",code-title="Navs - Pagination - Alignment")
+							nav(aria-label='Page navigation example')
+								ul.pagination.justify-content-center
+									li.page-item.disabled
+										a.page-link(href='#', tabindex='-1') Previous
+									li.page-item
+										a.page-link(href='#') 1
+									li.page-item
+										a.page-link(href='#') 2
+									li.page-item
+										a.page-link(href='#') 3
+									li.page-item
+										a.page-link(href='#') Next
+
+
+					.code-zone
+						span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+						.code-data(cs-lang="html",code-title="Navs - Pagination - Alignment")
+							nav(aria-label='Page navigation example')
+								ul.pagination.justify-content-end
+									li.page-item.disabled
+										a.page-link(href='#', tabindex='-1') Previous
+									li.page-item
+										a.page-link(href='#') 1
+									li.page-item
+										a.page-link(href='#') 2
+									li.page-item
+										a.page-link(href='#') 3
+									li.page-item
+										a.page-link(href='#') Next 
+			h3.doc-title Tabs
+			hr
+			.row
+				.col-md-5
+					.code-zone
+						span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+						.code-data(cs-lang="html",code-title="Navs - Tabs")
+							ul.nav.nav-tabs
+								li.nav-item
+									a.nav-link.active(data-toggle='tab', href='#home') Home
+								li.nav-item
+									a.nav-link(data-toggle='tab', href='#profile') Profile
+								li.nav-item.dropdown
+									a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') Dropdown
+									.dropdown-menu
+										a.dropdown-item(data-toggle='tab', href='#contact') Contact
+										a.dropdown-item(data-toggle='tab', href='#dropdown1') Action
+										a.dropdown-item(data-toggle='tab', href='#dropdown2') Another action
+								li.nav-item
+									a.nav-link.disabled(href='#') Disabled
+							#myTabContent.tab-content
+								#home.tab-pane.fade.show.active
+									p
+										| Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+								#profile.tab-pane.fade
+									p
+										| Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.
+								#contact.tab-pane.fade
+									p
+										| Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip nostrud. Amet ex cupidatat excepteur aute veniam incididunt mollit cupidatat esse irure officia elit do ipsum ullamco Lorem. Ullamco ut ad minim do mollit labore ipsum laboris ipsum commodo sunt tempor enim incididunt. Commodo quis sunt dolore aliquip aute tempor irure magna enim minim reprehenderit. Ullamco consectetur culpa veniam sint cillum aliqua incididunt velit ullamco sunt ullamco quis quis commodo voluptate. Mollit nulla nostrud adipisicing aliqua cupidatat aliqua pariatur mollit voluptate voluptate consequat non.
+								#dropdown1.tab-pane.fade
+									p
+										| Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.
+								#dropdown2.tab-pane.fade
+									p
+										| Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.
+				.col-md-7
+					.code-zone
+						span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+						.code-data(cs-lang="html",code-title="Navs - Tabs & Pills")
+							.row
+								.col-md-4
+									#v-pills-tab.nav.flex-column.nav-pills(role='tablist', aria-orientation='vertical')
+										a#v-pills-home-tab.nav-link.active(data-toggle='pill', href='#v-pills-home', role='tab', aria-controls='v-pills-home', aria-selected='true') Home
+										a#v-pills-profile-tab.nav-link(data-toggle='pill', href='#v-pills-profile', role='tab', aria-controls='v-pills-profile', aria-selected='false') Profile
+										a#v-pills-messages-tab.nav-link(data-toggle='pill', href='#v-pills-messages', role='tab', aria-controls='v-pills-messages', aria-selected='false') Messages
+										a#v-pills-settings-tab.nav-link(data-toggle='pill', href='#v-pills-settings', role='tab', aria-controls='v-pills-settings', aria-selected='false') Settings
+								.col-md-8
+									#v-pills-tabContent.tab-content
+										#v-pills-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='v-pills-home-tab') 
+											p 
+												| Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incididunt minim occaecat.
+										#v-pills-profile.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-profile-tab') 
+											p 
+												| Culpa dolor voluptate do laboris laboris irure reprehenderit id incididunt duis pariatur mollit aute magna pariatur consectetur. Eu veniam duis non ut dolor deserunt commodo et minim in quis laboris ipsum velit id veniam. Quis ut consectetur adipisicing officia excepteur non sit. Ut et elit aliquip labore Lorem enim eu. Ullamco mollit occaecat dolore ipsum id officia mollit qui esse anim eiusmod do sint minim consectetur qui.
+										#v-pills-messages.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-messages-tab') 
+											p 
+												| Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia dolor. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.
+										#v-pills-settings.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-settings-tab') 
+											p 
+												| Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.
+
+
+
+
+
+
+
+
+
+

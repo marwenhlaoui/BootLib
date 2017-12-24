@@ -1,0 +1,65 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title 
+      block title
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    link(rel="icon",type="image/png" , href="assets/bootlib.png", title="BootLib")
+    link(rel="stylesheet", href="http://cdn.dev2vision.com/bootlib/4/default.min.css")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+    link(rel="stylesheet", href="http://cdn.dev2vision.com/coderStyle/css/v0.3/coderStyle.min.css")
+    link(rel="stylesheet", href="../dist/css/app.min.css")
+  body#app(data-spy="scroll" data-target=".theme-menu" data-offset="0")
+    block nav-bar
+    .col-md-2.float-right
+    .col-md-6.offset-md-2(style="min-height:70vh")
+        h3.text-center.mt-4 Download
+        .card.bg-light.mt-4.p-4.text-center
+            .form-group.my-4
+                label.font-weight-bold(for='css_link') Complete CSS
+                .input-group.download-show.input-group-lg.text-left
+                    block css-link-input
+                    span.input-group-btn
+                        button.btn-default.btn.collapsed(type='button', data-toggle='collapse', data-target='#_css_link', aria-expanded='false', aria-controls='_css_link')
+                            span.ion.ion-chevron-down
+            #_css_link.collapse
+                .card.bg-light.mb-4.px-4.text-center
+                    .form-group.mt-4
+                        label.font-weight-bold(for='html__css_link') HTML
+                        .set-code(cs-lang="html").text-left
+                            block css-link-html
+                            
+
+                    .form-group
+                        label.font-weight-bold(for='jade__css_link')
+                            a(href='https://pugjs.org/', target='_blank', rel='noopener') Pug
+                        .set-code(cs-lang="html").text-left
+                            block css-link-pug
+
+
+            hr
+            .form-group.my-4
+                label.font-weight-bold(for='js_link') Complete JavaScript
+            #_js_link
+                .card.bg-light.mb-4.px-4.text-center
+                    .form-group.mt-4
+                        label.font-weight-bold(for='html__js_link') HTML
+                        .set-code(cs-lang="html").text-left
+                            | &lt;script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" &gt;&lt;/script&gt;
+                            | &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" &gt;&lt;/script&gt;
+                            | &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" &gt;&lt;/script&gt;
+                    .form-group
+                        label.font-weight-bold(for='jade__js_link')
+                            a(href='https://pugjs.org/', target='_blank', rel='noopener') Pug
+                        .set-code(cs-lang="html").text-left
+                            | script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js")
+                            | script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js")
+                            | script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js")
+
+    include includes/footer.pug
+    script(src="../dist/js/app.min.js")
+      
+      

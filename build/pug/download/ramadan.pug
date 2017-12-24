@@ -1,0 +1,16 @@
+extends ../layout/layout-download.pug
+
+block title
+	| BootLib : ramadan - download 
+block nav-bar
+	include ../layout/includes/navbar/ramadan.pug
+
+block css-link-input
+	input#css_link.form-control(type='text', value='http://cdn.dev2vision.com/bootlib/4/ramadan.min.css')
+
+block css-link-html
+	| <link href="http://cdn.dev2vision.com/bootlib/4/ramadan.min.css" rel="stylesheet">	
+
+block css-link-pug
+	| link(href="http://cdn.dev2vision.com/bootlib/4/ramadan.min.css", rel="stylesheet")
+

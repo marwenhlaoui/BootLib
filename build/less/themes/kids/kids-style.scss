@@ -1,0 +1,71 @@
+//alert
+
+.alert{
+
+    background-repeat: no-repeat;
+}
+.alert-warning{
+    background-image: url(assets/kids/kids-1.png); 
+    background-size: 10%;
+    background-position: right 20%;
+}
+.alert-success{
+    background-image: url(assets/kids/kids-2.png);
+    background-size: 10%;
+    background-position: right 2%;
+}
+.alert-danger{
+    background-image: url(assets/kids/kids-3.png);
+    background-size: 10%;
+    background-position: right 2%;
+}
+.alert-info{
+    background-image: url(assets/kids/kids-1.png);
+    background-size: 10%;
+    background-position: right 20%;
+}
+.alert-primary{
+    background-image: url(assets/kids/kids-2.png);
+    background-size: 10%;
+    background-position: right 2%;
+}
+.alert-secondary{
+    background-image: url(assets/kids/kids-3.png);
+    background-size: 10%;
+    background-position: right 2%;
+}
+
+//breadcrumb
+
+.breadcrumb{
+    background-image: url(assets/kids/kids-1.png); 
+    background-size: 10%;
+    background-position: right 20%;
+    background-repeat: no-repeat;
+}
+
+//navbar 
+
+.navbar {
+    background-repeat: no-repeat;
+}
+
+.navbar-dark{
+    background-image: url(assets/kids/kids-2.png); 
+    background-size: 10%;
+    background-position: right 70%;
+}
+.navbar-light{
+    background-image: url(assets/kids/kids-3.png); 
+    background-size: 10%;
+    background-position: right 35%;
+} 
+
+//Jumbotron
+
+.jumbotron{
+    background-image: url(assets/kids/kids-2.png); 
+    background-size: 10%;
+    background-position: right 35%;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,182 @@
+.col-md-12
+	h2.doc-title Buttons
+	hr
+	.row
+		.col-md-10
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Buttons")
+					button.btn.btn-primary(type='button') Primary
+					button.btn.btn-secondary.disabled(type='button') Secondary
+					button.btn.btn-success(type='button') Success
+					button.btn.btn-danger(type='button') Danger
+					button.btn.btn-warning(type='button') Warning
+					button.btn.btn-info(type='button') Info
+					button.btn.btn-light(type='button') Light
+					button.btn.btn-dark(type='button') Dark
+					button.btn.btn-link(type='button') Link
+			br
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Buttons - Outline")
+					button.btn.btn-outline-primary(type='button') Primary
+					button.btn.btn-outline-secondary.disabled(type='button') Secondary
+					button.btn.btn-outline-success(type='button') Success
+					button.btn.btn-outline-danger(type='button') Danger
+					button.btn.btn-outline-warning(type='button') Warning
+					button.btn.btn-outline-info(type='button') Info
+					button.btn.btn-outline-light(type='button') Light
+					button.btn.btn-outline-dark(type='button') Dark
+			br
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Buttons - Group with nested dropdown")
+					.btn-group(role='group', aria-label='Button group with nested dropdown')
+						button.btn.btn-primary(type='button') Primary
+						.btn-group(role='group')
+							button#btnGroupDrop1.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+							.dropdown-menu(aria-labelledby='btnGroupDrop1')
+								a.dropdown-item(href='#') Dropdown link
+								a.dropdown-item(href='#') Dropdown link
+					.btn-group(role='group', aria-label='Button group with nested dropdown')
+						button.btn.btn-success(type='button') Success
+						.btn-group(role='group')
+							button#btnGroupDrop2.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+							.dropdown-menu(aria-labelledby='btnGroupDrop2')
+								a.dropdown-item(href='#') Dropdown link
+								a.dropdown-item(href='#') Dropdown link
+					.btn-group(role='group', aria-label='Button group with nested dropdown')
+						button.btn.btn-danger(type='button') Danger
+						.btn-group(role='group')
+							button#btnGroupDrop3.btn.btn-danger.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+							.dropdown-menu(aria-labelledby='btnGroupDrop3')
+								a.dropdown-item(href='#') Dropdown link
+								a.dropdown-item(href='#') Dropdown link
+					.btn-group(role='group', aria-label='Button group with nested dropdown')
+						button.btn.btn-warning(type='button') Warning
+						.btn-group(role='group')
+							button#btnGroupDrop4.btn.btn-warning.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+							.dropdown-menu(aria-labelledby='btnGroupDrop4')
+								a.dropdown-item(href='#') Dropdown link
+								a.dropdown-item(href='#') Dropdown link
+					.btn-group(role='group', aria-label='Button group with nested dropdown')
+						button.btn.btn-info(type='button') Info
+						.btn-group(role='group')
+							button#btnGroupDrop5.btn.btn-info.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+							.dropdown-menu(aria-labelledby='btnGroupDrop5')
+								a.dropdown-item(href='#') Dropdown link
+								a.dropdown-item(href='#') Dropdown link
+					.btn-group(role='group', aria-label='Button group with nested dropdown')
+						button.btn.btn-dark(type='button') Dark
+						.btn-group(role='group')
+							button#btnGroupDrop6.btn.btn-dark.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+							.dropdown-menu(aria-labelledby='btnGroupDrop6')
+								a.dropdown-item(href='#') Dropdown link
+								a.dropdown-item(href='#') Dropdown link
+			br
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Buttons - Sizes")
+					button.btn.btn-primary.btn-lg(type='button') Large button
+					button.btn.btn-primary(type='button') Default button
+					button.btn.btn-primary.btn-sm(type='button') Small button
+			br
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Buttons - Group")
+					.btn-group(role='group', aria-label='Basic example')
+						button.btn.btn-secondary(type='button') Left
+						button.btn.btn-secondary(type='button') Middle
+						button.btn.btn-secondary(type='button') Right
+			br
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Buttons - Checkbox")
+					.btn-group(data-toggle='buttons')
+						label.btn.btn-secondary
+							input(type='checkbox', checked='')
+							|  Checkbox 1
+						label.btn.btn-secondary
+							input(type='checkbox')
+							|  Checkbox 2
+						label.btn.btn-secondary
+							input(type='checkbox')
+							|  Checkbox 3
+			br
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Buttons - Radio")
+					.btn-group(data-toggle='buttons')
+						label.btn.btn-secondary.active
+							input#option1(type='radio', name='options', autocomplete='off', checked='')
+							|  Radio 1 (preselected)
+						label.btn.btn-secondary
+							input#option2(type='radio', name='options', autocomplete='off')
+							|  Radio 2
+						label.btn.btn-secondary
+							input#option3(type='radio', name='options', autocomplete='off')
+							|  Radio 3
+			br
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Buttons - Toolbar")
+					.btn-toolbar(role='toolbar', aria-label='Toolbar with button groups')
+						.btn-group.mr-2(role='group', aria-label='First group')
+							button.btn.btn-secondary(type='button') 1
+							button.btn.btn-secondary(type='button') 2
+							button.btn.btn-secondary(type='button') 3
+							button.btn.btn-secondary(type='button') 4
+						.btn-group.mr-2(role='group', aria-label='Second group')
+							button.btn.btn-secondary(type='button') 5
+							button.btn.btn-secondary(type='button') 6
+							button.btn.btn-secondary(type='button') 7
+							button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+								| Dropdown
+							.dropdown-menu(aria-labelledby='btnGroupDrop1')
+								a.dropdown-item(href='#') Dropdown link
+								a.dropdown-item(href='#') Dropdown link
+						.btn-group(role='group', aria-label='Third group')
+							button.btn.btn-secondary(type='button') 8
+			br
+
+		.col-md-2
+			br
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Buttons - Vertical Group")
+					.btn-group-vertical(role='group', aria-label='Vertical button group')
+						button.btn.btn-secondary(type='button') Button
+						button.btn.btn-secondary(type='button') Button
+						.btn-group(role='group')
+							button#btnGroupVerticalDrop1.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+								| Dropdown
+							.dropdown-menu(aria-labelledby='btnGroupVerticalDrop1', x-placement='bottom-start')
+								a.dropdown-item(href='#') Dropdown link
+								a.dropdown-item(href='#') Dropdown link
+						button.btn.btn-secondary(type='button') Button
+						button.btn.btn-secondary(type='button') Button
+						.btn-group(role='group')
+							button#btnGroupVerticalDrop2.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+								| Dropdown
+							.dropdown-menu(aria-labelledby='btnGroupVerticalDrop2', x-placement='bottom-start')
+								a.dropdown-item(href='#') Dropdown link
+								a.dropdown-item(href='#') Dropdown link
+						.btn-group(role='group')
+							button#btnGroupVerticalDrop3.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+								| Dropdown
+							.dropdown-menu(aria-labelledby='btnGroupVerticalDrop3')
+								a.dropdown-item(href='#') Dropdown link
+								a.dropdown-item(href='#') Dropdown link
+						.btn-group(role='group')
+							button#btnGroupVerticalDrop4.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+								| Dropdown
+							.dropdown-menu(aria-labelledby='btnGroupVerticalDrop4')
+								a.dropdown-item(href='#') Dropdown link
+								a.dropdown-item(href='#') Dropdown link
+
+			br
+
+
+
+
+

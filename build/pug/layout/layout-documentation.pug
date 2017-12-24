@@ -1,0 +1,61 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title 
+      block title
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    link(rel="icon",type="image/png" , href="assets/bootlib.png", title="BootLib")
+    link(rel="stylesheet", href="http://cdn.dev2vision.com/bootlib/4/default.min.css")
+    link(rel="stylesheet", href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+    link(rel="stylesheet", href="http://cdn.dev2vision.com/coderStyle/css/v0.3/coderStyle.min.css")
+    block css-links
+    link(rel="stylesheet", href="../dist/css/app.min.css")
+  body#app(data-spy="scroll" data-target=".theme-menu" data-offset="0")
+    block nav-bar
+    .col-md-2.float-right
+      include includes/menu.pug
+      include includes/modal.pug
+    .col-md-9.offset-md-1
+      .theme-data
+        #typography
+          include theme/typography.pug
+        #alert
+          include theme/alert.pug
+        #badge
+          include theme/badge.pug
+        #navs
+          include theme/navs.pug
+        #navbar
+          include theme/navbar.pug
+        #buttons
+          include theme/buttons.pug
+        #tables
+          include theme/tables.pug
+        #forms
+          include theme/forms.pug
+        #progress
+          include theme/progress.pug
+        #jumbotron
+          include theme/jumbotron.pug
+        #modals
+          include theme/modals.pug
+        #dialogs
+          include theme/dialogs.pug
+        #list-group
+          include theme/list-group.pug
+        #cards
+          include theme/cards.pug
+        #collapse
+          include theme/collapse.pug
+        #scrollspy
+          include theme/scrollspy.pug
+        #images
+          include theme/images.pug
+        #carousel
+          include theme/carousel.pug
+    include includes/footer.pug
+    script(src="../dist/js/app.min.js")
+      
+      

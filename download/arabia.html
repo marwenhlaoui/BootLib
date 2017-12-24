@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> BootLib : arabia - download 
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="assets/bootlib.png" title="BootLib">
+    <link rel="stylesheet" href="http://cdn.dev2vision.com/bootlib/4/default.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="http://cdn.dev2vision.com/coderStyle/css/v0.3/coderStyle.min.css">
+    <link rel="stylesheet" href="../dist/css/app.min.css">
+  </head>
+  <body id="app" data-spy="scroll" data-target=".theme-menu" data-offset="0">
+    <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar" id="app-navbar">
+      <div class="container"><a class="navbar-brand" href="../index.html"><img class="d-inline-block align-top" src="../assets/bootlib.png" height="30" alt="BootLib">    BootLib : arabia</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto"></ul>
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="../themes/arabia.html">Documentation</a></li>
+            <li class="nav-item"><a class="nav-link" href="../download/arabia.html">Download</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CDN</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="http://cdn.dev2vision.com/bootlib/4/arabia.css" target="_black">arabia.css</a><a class="dropdown-item" href="http://cdn.dev2vision.com/bootlib/4/arabia.min.css" target="_black">arabia.min.css</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="col-md-2 float-right"></div>
+    <div class="col-md-6 offset-md-2" style="min-height:70vh;">
+      <h3 class="text-center mt-4">Download</h3>
+      <div class="card bg-light mt-4 p-4 text-center">
+        <div class="form-group my-4">
+          <label class="font-weight-bold" for="css_link">Complete CSS</label>
+          <div class="input-group download-show input-group-lg text-left">
+            <input class="form-control" id="css_link" type="text" value="http://cdn.dev2vision.com/bootlib/4/arabia.min.css"><span class="input-group-btn">
+              <button class="btn-default btn collapsed" type="button" data-toggle="collapse" data-target="#_css_link" aria-expanded="false" aria-controls="_css_link"><span class="ion ion-chevron-down"></span></button></span>
+          </div>
+        </div>
+        <div class="collapse" id="_css_link">
+          <div class="card bg-light mb-4 px-4 text-center">
+            <div class="form-group mt-4">
+              <label class="font-weight-bold" for="html__css_link">HTML</label>
+              <div class="set-code text-left" cs-lang="html"><link href="http://cdn.dev2vision.com/bootlib/4/arabia.min.css" rel="stylesheet">	
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="font-weight-bold" for="jade__css_link"><a href="https://pugjs.org/" target="_blank" rel="noopener">Pug</a></label>
+              <div class="set-code text-left" cs-lang="html">link(href="http://cdn.dev2vision.com/bootlib/4/arabia.min.css", rel="stylesheet")
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group my-4">
+          <label class="font-weight-bold" for="js_link">Complete JavaScript</label>
+        </div>
+        <div id="_js_link">
+          <div class="card bg-light mb-4 px-4 text-center">
+            <div class="form-group mt-4">
+              <label class="font-weight-bold" for="html__js_link">HTML</label>
+              <div class="set-code text-left" cs-lang="html">
+                &lt;script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" &gt;&lt;/script&gt;
+                &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" &gt;&lt;/script&gt;
+                &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" &gt;&lt;/script&gt;
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="font-weight-bold" for="jade__js_link"><a href="https://pugjs.org/" target="_blank" rel="noopener">Pug</a></label>
+              <div class="set-code text-left" cs-lang="html">
+                script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js")
+                script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js")
+                script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js")
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-10">
+            <p>This Projects is open-sourced software licensed under the MIT license</p>
+            <p>Thanks to teams of <a href="http://getbootstrap.com">Bootstrap </a>, <a href="https://bootswatch.com">Bootswatch </a>, <a href="http://fontawesome.io/">Font Awesome </a>, <a href="http://ionicons.com/">IonIcons </a>and <a href="https://fonts.google.com/">Google fonts</a>.</p>
+            <p>Made with ♥ by <a href="http://marwenhlaoui.me">Marwen Hlaoui</a>  &copy; 2017 - 2018</p>
+          </div>
+          <div class="col-xs-2"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="http://cdn.dev2vision.com/coderStyle/js/v0.3/coderStyle.min.js"></script>
+    <script src="../dist/js/app.min.js"></script>
+  </body>
+</html>

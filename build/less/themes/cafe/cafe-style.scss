@@ -1,0 +1,147 @@
+//alert
+
+.alert{
+
+    background-repeat: no-repeat;
+}
+.alert-warning{
+    background-image: url(assets/cafe/cafe-1.png); 
+    background-size: 20%;
+    background-position: right bottom;
+}
+.alert-success{
+    background-image: url(assets/cafe/cafe-2.png);
+    background-size: 20%;
+    background-position: right 2%;
+}
+.alert-danger{
+    background-image: url(assets/cafe/cafe-7.png);
+    background-size: 20%;
+    background-position: right 2%;
+}
+.alert-info{
+    background-image: url(assets/cafe/cafe-4.png);
+    background-size: 20%;
+    background-position: right 2%;
+}
+.alert-primary{
+    background-image: url(assets/cafe/cafe-3.png);
+    background-size: 20%;
+    background-position: right 2%;
+}
+.alert-secondary{
+    background-image: url(assets/cafe/cafe-5.png);
+    background-size: 20%;
+    background-position: right 2%;
+}
+
+//breadcrumb
+
+.breadcrumb{
+    background-image: url(assets/cafe/cafe-1.png); 
+    background-size: 20%;
+    background-position: right 70%;
+    background-repeat: no-repeat;
+}
+
+//navbar 
+
+.navbar {
+    background-repeat: no-repeat;
+}
+
+.navbar-dark{
+    background-image: url(assets/cafe/cafe-1.png); 
+    background-size: 20%;
+    background-position: right 70%;
+}
+.navbar-light{
+    background-image: url(assets/cafe/cafe-6.png); 
+    background-size: 20%;
+    background-position: right 35%;
+} 
+
+// button
+
+.btn{
+    background-image: url(assets/cafe/cafe-1.png); 
+    background-size: 50%;
+    background-position: right 10%;
+    background-repeat: no-repeat;
+}
+.btn-dark,.btn-link{
+    background-image: none!important;
+}
+.btn-group,.btn-group-vertical{
+	.btn{
+		background-image: none!important;
+	}
+}
+
+//table
+
+.table{
+    background-image: url(assets/cafe/cafe-3.png);
+    background-size: 15%;
+    background-position: right 10%;
+    background-repeat: no-repeat;
+}
+
+//Jumbotron
+
+.jumbotron{
+    background-image: url(assets/cafe/cafe-7.png);
+    background-size: 15%;
+    background-position: right 10%;
+    background-repeat: no-repeat;
+    &.jumbotron-fluid{
+    	background-image: url(assets/cafe/cafe-3.png);
+    }
+}
+
+//list group
+
+.list-group .list-group-item.active{
+    background-image: url(assets/cafe/cafe-4.png);
+    background-size: 15%;
+    background-position: right 10%;
+    background-repeat: no-repeat;
+}
+
+//card
+
+
+.card{
+
+    background-repeat: no-repeat;
+    &.bg-warning,&.border-warning{
+	    background-image: url(assets/cafe/cafe-6.png); 
+	    background-size: 20%;
+	    background-position: right 2%;
+	}
+	&.bg-success,&.border-success{
+	    background-image: url(assets/cafe/cafe-2.png);
+	    background-size: 20%;
+	    background-position: right 2%;
+	}
+	&.bg-danger,&.border-danger{
+	    background-image: url(assets/cafe/cafe-7.png);
+	    background-size: 20%;
+	    background-position: right 2%;
+	}
+	&.bg-info,&.border-info{
+	    background-image: url(assets/cafe/cafe-4.png);
+	    background-size: 20%;
+	    background-position: right 2%;
+	}
+	&.bg-primary,&.border-primary{
+	    background-image: url(assets/cafe/cafe-3.png);
+	    background-size: 20%;
+	    background-position: right 2%;
+	}
+	&.bg-secondary,&.border-secondary{
+	    background-image: url(assets/cafe/cafe-5.png);
+	    background-size: 20%;
+	    background-position: right 2%;
+	}
+}

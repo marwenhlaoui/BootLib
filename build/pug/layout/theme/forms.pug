@@ -1,0 +1,191 @@
+.col-md-12
+	h2.doc-title Forms
+	hr
+	.row
+		.col-md-6
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Forms")
+					form
+						fieldset
+							.form-group.row
+								label.col-sm-2.col-form-label(for='staticEmail') Email
+								.col-sm-10
+									input#staticEmail.form-control-plaintext(type='text', readonly='', value='email@example.com')
+							.form-group.form-row
+								.col
+									input.form-control(type='text', placeholder='First name')
+								.col
+									input.form-control(type='text', placeholder='Last name')
+
+							.form-group
+								label(for='exampleInputEmail1') Email address
+								input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
+								small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+							.form-group
+								label(for='exampleInputPassword1') Password
+								input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+							.form-group
+								label(for='exampleSelect1') Example select
+								select#exampleSelect1.form-control
+									option 1
+									option 2
+									option 3
+									option 4
+									option 5
+							.form-group
+								label(for='exampleSelect2') Example multiple select
+								select#exampleSelect2.form-control(multiple='')
+									option 1
+									option 2
+									option 3
+									option 4
+									option 5
+							.form-group
+								label(for='exampleTextarea') Example textarea
+								textarea#exampleTextarea.form-control(rows='3')
+							.form-group
+								label(for='exampleInputFile') File input
+								input#exampleInputFile.form-control-file(type='file', aria-describedby='fileHelp')
+								small#fileHelp.form-text.text-muted
+									| This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.
+							fieldset.form-group
+								legend Radio buttons
+								.form-check
+									label.form-check-label
+										input#optionsRadios1.form-check-input(type='radio', name='optionsRadios', value='option1', checked='')
+										|           Option one is this and that—be sure to include why it's great
+								.form-check
+									label.form-check-label
+										input#optionsRadios2.form-check-input(type='radio', name='optionsRadios', value='option2')
+										|           Option two can be something else and selecting it will deselect option one
+								.form-check.disabled
+									label.form-check-label
+										input#optionsRadios3.form-check-input(type='radio', name='optionsRadios', value='option3', disabled='')
+										|           Option three is disabled
+								.form-check.form-check-inline
+									label.form-check-label
+										input#inlineRadio1.form-check-input(type='radio', name='inlineRadioOptions', value='option1')
+										|  1
+								.form-check.form-check-inline
+									label.form-check-label
+										input#inlineRadio2.form-check-input(type='radio', name='inlineRadioOptions', value='option2')
+										|  2
+								.form-check.form-check-inline.disabled
+									label.form-check-label
+										input#inlineRadio3.form-check-input(type='radio', name='inlineRadioOptions', value='option3', disabled='')
+										|  3
+							fieldset.form-group
+								legend Checkboxes
+								.form-check
+									label.form-check-label
+										input.form-check-input(type='checkbox', value='', checked='')
+										|           Option one is this and that—be sure to include why it's great
+								.form-check.disabled
+									label.form-check-label
+										input.form-check-input(type='checkbox', value='', disabled='')
+										|           Option two is disabled
+							button.btn.btn-primary(type='submit') Submit
+		.col-md-6
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Forms - Options")
+					.form-group
+						fieldset(disabled='')
+							label.control-label(for='disabledInput') Disabled input
+							input#disabledInput.form-control(type='text', placeholder='Disabled input here...', disabled='')
+					.form-group
+						fieldset
+							label.control-label(for='readOnlyInput') Readonly input
+							input#readOnlyInput.form-control(type='text', placeholder='Readonly input here…', readonly='')
+					.form-group.has-success
+						label.form-control-label(for='inputSuccess1') Valid input
+						input#inputValid.form-control.is-valid(type='text', value='correct value')
+						.valid-feedback Success! You've done it.
+					.form-group.has-danger
+						label.form-control-label(for='inputDanger1') Invalid input
+						input#inputInvalid.form-control.is-invalid(type='text', value='wrong value')
+						.invalid-feedback Sorry, that username's taken. Try another?
+					.form-group
+						label.col-form-label.col-form-label-lg(for='inputLarge') Large input
+						input#inputLarge.form-control.form-control-lg(type='text', placeholder='.form-control-lg')
+					.form-group
+						label.col-form-label(for='inputDefault') Default input
+						input#inputDefault.form-control(type='text', placeholder='Default input')
+					.form-group
+						label.col-form-label.col-form-label-sm(for='inputSmall') Small input
+						input#inputSmall.form-control.form-control-sm(type='text', placeholder='.form-control-sm')
+					.form-group
+						label.control-label Input addons
+						.form-group
+							label.sr-only(for='exampleInputAmount') Amount (in dollars)
+							.input-group
+								.input-group-addon $
+								input#exampleInputAmount.form-control(type='text', placeholder='Amount')
+								.input-group-addon .00
+			hr
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Forms - Custom")
+					fieldset
+						.form-group
+							label.custom-control.custom-radio
+								input#radio1.custom-control-input(name='radio', type='radio', checked='')
+								span.custom-control-indicator
+								span.custom-control-description Toggle this custom radio
+							label.custom-control.custom-radio
+								input#radio2.custom-control-input(name='radio', type='radio')
+								span.custom-control-indicator
+								span.custom-control-description Or toggle this other custom radio
+							label.custom-control.custom-radio
+								input#radio3.custom-control-input(name='radio', type='radio', disabled='')
+								span.custom-control-indicator
+								span.custom-control-description Disabled custom radio
+						.form-group
+							label.custom-control.custom-checkbox
+								input.custom-control-input(type='checkbox', checked='')
+								span.custom-control-indicator
+								span.custom-control-description Check this custom checkbox
+							label.custom-control.custom-checkbox
+								input.custom-control-input(type='checkbox', disabled='')
+								span.custom-control-indicator
+								span.custom-control-description Disabled custom checkbox
+						.form-group
+							select.custom-select
+								option(selected='') Open this select menu
+								option(value='1') One
+								option(value='2') Two
+								option(value='3') Three
+						.form-group
+							label.custom-file
+								input#file2.custom-file-input(type='file')
+								span.custom-file-control
+			hr
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Forms - Supported elements")
+					form.was-validated
+						label.custom-control.custom-checkbox
+							input.custom-control-input(type='checkbox', required='')
+							span.custom-control-indicator
+							span.custom-control-description Check this custom checkbox
+						.custom-controls-stacked.d-block.my-3
+							label.custom-control.custom-radio
+								input#radioStacked1.custom-control-input(name='radio-stacked', type='radio', required='')
+								span.custom-control-indicator
+								span.custom-control-description Toggle this custom radio
+							label.custom-control.custom-radio
+								input#radioStacked2.custom-control-input(name='radio-stacked', type='radio', required='')
+								span.custom-control-indicator
+								span.custom-control-description Or toggle this other custom radio
+						select.custom-select.d-block.my-3(required='')
+							option(value='') Open this select menu
+							option(value='1') One
+							option(value='2') Two
+							option(value='3') Three
+						label.custom-file
+							input#file.custom-file-input(type='file', required='')
+							span.custom-file-control
+
+
+

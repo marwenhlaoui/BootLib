@@ -1,0 +1,233 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title BootLib
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="icon",type="image/png" , href="assets/bootlib.png", title="BootLib")
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    link(rel="stylesheet", href="http://cdn.dev2vision.com/bootlib/4/default.min.css")
+    link(rel="stylesheet", href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+    link(rel="stylesheet", href="dist/css/app.min.css")
+  body#app
+    include layout/includes/navbar.pug
+
+
+    .top-slider
+      .container
+        .row
+          .col-sm-4.offset-sm-4.col-md-3.offset-md-1.col-logo
+            img(src="assets/bootlib.png", alt="BootLib" , class="logo")
+          .col-md-7
+            .row
+              h1 BootLib
+              p Free web themes library for designing websites and web applications 
+            .row.info
+              .col-md-2.col-sm-4.offset-sm-4.offset-md-0.col-icon
+                span.ion.ion-social-github
+              .col-md-9
+                p All templates are released under the MIT License and maintained by the community on GitHub
+            .row.info
+              .col-md-2.col-sm-4.offset-sm-4.offset-md-0.col-icon
+                span.ion.ion-social-buffer
+              .col-md-9
+                p Themes are built with the latest version of best front-end web framework Bootstrap 4.0
+            .row.info
+              .col-md-2.col-sm-4.offset-sm-4.offset-md-0.col-icon
+                span.ion.ion-coffee
+              .col-md-9
+                p Easy to include in your project . Download , clone or cdn , just replace set the css file 
+    .list-themes
+      .container
+        .row
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/default.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/default.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Default
+              a(href="themes/default.html")
+                img(src="assets/themes/default.png", alt="Default")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/facebook.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/facebook.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Facebook
+              a(href="themes/facebook.html")
+                img(src="assets/themes/facebook.png", alt="Facebook")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/twitter.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/twitter.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Twitter
+              a(href="themes/twitter.html")
+                img(src="assets/themes/twitter.png", alt="Twitter")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/youtube.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/youtube.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Youtube
+              a(href="themes/youtube.html")
+                img(src="assets/themes/youtube.png", alt="Youtube")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/ubuntu.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/ubuntu.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Ubuntu
+              a(href="themes/ubuntu.html")
+                img(src="assets/themes/ubuntu.png", alt="Ubuntu")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/material.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/material.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Material
+              a(href="themes/material.html")
+                img(src="assets/themes/material.png", alt="Material")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/spacetoon.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/spacetoon.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Spacetoon
+              a(href="themes/spacetoon.html")
+                img(src="assets/themes/spacetoon.png", alt="Spacetoon")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/kids.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/kids.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Kids
+              a(href="themes/kids.html")
+                img(src="assets/themes/kids.png", alt="Kids")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/flower.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/flower.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Flower
+              a(href="themes/flower.html")
+                img(src="assets/themes/flower.png", alt="Flower")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/robot.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/robot.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Robot
+              a(href="themes/robot.html")
+                img(src="assets/themes/robot.png", alt="Robot")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/matrix.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/matrix.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Matrix
+              a(href="themes/matrix.html")
+                img(src="assets/themes/matrix.png", alt="Matrix")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/galaxy.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/galaxy.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Galaxy
+              a(href="themes/galaxy.html")
+                img(src="assets/themes/galaxy.png", alt="Galaxy")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/ramadan.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/ramadan.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Ramadan
+              a(href="themes/ramadan.html")
+                img(src="assets/themes/ramadan.png", alt="Ramadan")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/arabia.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/arabia.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Arabia
+              a(href="themes/arabia.html")
+                img(src="assets/themes/arabia.png", alt="Arabia")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/sahara.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/sahara.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Sahara
+              a(href="themes/sahara.html")
+                img(src="assets/themes/sahara.png", alt="Sahara")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/green-zone.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/green-zone.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Green zone
+              a(href="themes/green-zone.html")
+                img(src="assets/themes/green-zone.png", alt="Green zone")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/sky.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/sky.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Sky
+              a(href="themes/sky.html")
+                img(src="assets/themes/sky.png", alt="Sky")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/notebook.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/notebook.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Notebook
+              a(href="themes/notebook.html")
+                img(src="assets/themes/notebook.png", alt="Notebook")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/hacker.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/hacker.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 hacker
+              a(href="themes/hacker.html")
+                img(src="assets/themes/hacker.png", alt="hacker")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/moon.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/moon.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 Moon
+              a(href="themes/moon.html")
+                img(src="assets/themes/moon.png", alt="Moon")
+          .col-md-4
+            .item-theme
+              .links.float-right
+                .btn-group
+                  a(href="themes/cafe.html" , class="btn btn-sm ion ion-monitor" , title="Preview")
+                  a(href="download/cafe.html" , class="btn btn-sm ion ion-arrow-down-a" , title="Download")
+              h3 cafe
+              a(href="themes/cafe.html")
+                img(src="assets/themes/cafe.png", alt="cafe")
+
+    include layout/includes/footer.pug

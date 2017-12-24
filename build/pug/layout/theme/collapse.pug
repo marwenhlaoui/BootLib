@@ -1,0 +1,52 @@
+.col-md-12
+	h2.doc-title Collapse
+	hr
+	.row
+		.col-md-6
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Collapse")
+					#accordion(role='tablist')
+						.card
+							#headingOne.card-header(role='tab')
+								h5.mb-0
+									a(data-toggle='collapse', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+										| Collapsible Group Item #1
+							#collapseOne.collapse.show(role='tabpanel', aria-labelledby='headingOne', data-parent='#accordion')
+								.card-body
+									| Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						.card
+							#headingTwo.card-header(role='tab')
+								h5.mb-0
+									a.collapsed(data-toggle='collapse', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+										| Collapsible Group Item #2
+							#collapseTwo.collapse(role='tabpanel', aria-labelledby='headingTwo', data-parent='#accordion')
+								.card-body
+									| Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						.card
+							#headingThree.card-header(role='tab')
+								h5.mb-0
+									a.collapsed(data-toggle='collapse', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+										| Collapsible Group Item #3
+							#collapseThree.collapse(role='tabpanel', aria-labelledby='headingThree', data-parent='#accordion')
+								.card-body
+									| Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+		.col-md-6
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Collapse - Multiple targets")
+					p
+						a.btn.btn-primary(data-toggle='collapse', href='#multiCollapseExample1', aria-expanded='false', aria-controls='multiCollapseExample1') First element
+						button.btn.btn-primary(type='button', data-toggle='collapse', data-target='#multiCollapseExample2', aria-expanded='false', aria-controls='multiCollapseExample2') Second element
+						button.btn.btn-primary(type='button', data-toggle='collapse', data-target='.multi-collapse', aria-expanded='false', aria-controls='multiCollapseExample1 multiCollapseExample2') Both elements
+					.row
+						.col
+							#multiCollapseExample1.collapse.multi-collapse
+								.card.card-body
+									| Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+						.col
+							#multiCollapseExample2.collapse.multi-collapse
+								.card.card-body
+									| Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+

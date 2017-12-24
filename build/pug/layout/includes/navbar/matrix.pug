@@ -1,0 +1,20 @@
+nav.navbar.navbar-expand.navbar-dark.flex-column.flex-md-row.bd-navbar#app-navbar
+      .container
+        a.navbar-brand(href='../index.html')
+          img.d-inline-block.align-top(src='../assets/bootlib.png', height='30', alt='BootLib')
+          |     BootLib : matrix
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+          ul.nav.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href="../themes/matrix.html") Documentation
+            li.nav-item
+              a.nav-link(href="../download/matrix.html") Download
+            li.nav-item.dropdown
+              a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                | CDN
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                a.dropdown-item(href='http://cdn.dev2vision.com/bootlib/4/matrix.css' , target="_black") matrix.css
+                a.dropdown-item(href='http://cdn.dev2vision.com/bootlib/4/matrix.min.css' , target="_black") matrix.min.css

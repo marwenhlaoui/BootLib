@@ -1,0 +1,59 @@
+.col-md-12
+	h2.doc-title Modals
+	hr
+	.row
+		.col-md-3  
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Modals - Small")
+					// Small modal
+					button.btn.btn-primary(type='button', data-toggle='modal', data-target='.bd-example-modal-sm') Small modal
+					.modal.fade.bd-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='mySmallModalLabel', aria-hidden='true')
+						.modal-dialog.modal-sm
+							.modal-content
+								.modal-header
+									h5#exampleModalLabel.modal-title Modal title
+									button.close(type='button', data-dismiss='modal', aria-label='Close')
+										span(aria-hidden='true') ×
+								.modal-body
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quisquam blanditiis saepe architecto, aut eveniet. Fugiat enim, nam rem et ut dolorem magni saepe, optio ullam minus repellendus nulla earum.
+								.modal-footer
+									button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+									button.btn.btn-primary(type='button') Save changes
+
+		.col-md-3 
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data(cs-lang="html",code-title="Modals - Large")
+					// Large modal
+					button.btn.btn-primary(type='button', data-toggle='modal', data-target='.bd-example-modal-lg') Large modal
+					.modal.fade.bd-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+						.modal-dialog.modal-lg
+							.modal-content
+								.modal-header
+									h5#exampleModalLabel.modal-title Modal title
+									button.close(type='button', data-dismiss='modal', aria-label='Close')
+										span(aria-hidden='true') ×
+								.modal-body
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam dolor quisquam perferendis modi reprehenderit corrupti earum quo laboriosam, repellat unde dolorem consequatur labore vitae qui maxime? Cupiditate soluta, voluptatibus quaerat?
+								.modal-footer
+									button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+									button.btn.btn-primary(type='button') Save changes
+
+		.col-md-6 
+			.code-zone
+				span.float-right.btn.btn-sm.btn-code.ion.ion-code-working
+				.code-data.fix-model(cs-lang="html",code-title="Modals")
+					.modal(tabindex='-1', role='dialog')
+						.modal-dialog(role='document')
+							.modal-content
+								.modal-header
+									h5.modal-title Modal title
+									button.close(type='button', data-dismiss='modal', aria-label='Close')
+										span(aria-hidden='true') ×
+								.modal-body
+									p Modal body text goes here.
+								.modal-footer
+									button.btn.btn-primary(type='button') Save changes
+									button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+
